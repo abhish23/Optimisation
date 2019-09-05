@@ -1,0 +1,33 @@
+Particle Swarm Optimisation:
+
+PSO have many advantages such as comparitive simplicity, rapid convergence and little parameters
+to be adjusted. It has been used in many field such as mechanical, chemical, aerospace
+design etc. The particle swarm algorithm is an optimisation technique inspired by the metaphor
+of social interaction observed among insects or animals. The kind of social interaction modelled
+within a PSO is used to guide a population of individuals (particles) moving toward the
+most promising area of the search space. In a PSO algorithm, each particle is a candidate
+solution and each particle flies through the search space, depending on two important factors:
+the best position the current particle have found so far and the global best position identified
+from the entire population. The rate of change in positions of particle is given by its velocity.
+
+Particles velocity and positions are updated related to the pbest and gbest values. 
+PSO Search Domain
+Here, xi(t) is the position of particle at time t,
+vi(t) is the velocity by which it is moving in current direction,
+Pi(t) is the personal best location of a particle,and
+gi(t) is the global or teams best location.
+So, the particle will first move into its current location and then towards it personal best location
+and then after its global best location. After all this movement finally the particle will rest in a
+better position than earlier. Likewise, the whole bunch of particles move together and until ones
+find the destination.
+For updating the position,
+Xi(t+1) = Xi(t) + Vi(t+1)
+Vi(t+1) = wVi(t) + c1(Pi(t)-Xi(t)) + c2(g(t)- Xi(t))
+Standard Scalar Particle Swarm Optimisation:
+Vij(t+1) = wVij(t)+r1c1(Pij(t)-Xij(t)) +r2c2(g(t)-Xij(t))
+where r1 and r2 are random numbers range[0,1],
+c1 and c2 are acceleration coefficients,
+w is inertia coefficient,
+wVij(t) is inertia,
+r1c1(Pij(t)-Xij(t)) is Cognitive Component, and
+r2c2(g(t)-Xij(t)) is Social Component
