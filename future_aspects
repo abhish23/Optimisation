@@ -1,0 +1,18 @@
+The traditional approach for solving Travelling Salesman Problem is computationally difficult
+for increasing number of stops whereas Ant Colony Optimisation (ACO), Particle Swarm Optimisation (PSO) and Artificial Bee Colony (ABC) algorithm can easily solve Travelling Salesman Problem for a large number of stops. This proves that how swarm intelligence has acted as
+an inspiration paradigm for solving an optimisation problem.
+Artificial Bee Colony works on the waggle dance to find food sources while Particle Swarm
+Optimisation works on global best position. Also, Artificial Bee Colony needs at least ten to
+thirty execution cycle to give better outcome while PSO does the work in one execution cycle.
+Location of cities is treated as food sources, where one by one each and every city are visited
+in the search domain of respective algorithm and avoiding repetition.
+The code shows the best efficiency over LINUX platform as compared to Windows and MAC
+OS. Although, Particle Swarm Optimisation has worked faster than ABC a little change in a
+parameter can drastically affect the working of these algorithms. The best algorithm is yet to
+come as several variants of ABC, PSO and ABC are still under research. Proper parameters
+and topology selection are also one of the research areas. It has become a major concern for
+researchers as it provides a vast domain to work. Ant Colony Optimisation, Particle Swarm
+Optimisation and artificial bee colony algorithms are heuristic global optimisation which is also
+used in various real-life applications.Although ABC has great potential, it was clear to the scientific community that some modifications to the original structure are still necessary in order
+to significantly improve its performance. And also ABC can be used as an evolutionary framework into which different traditional or modern heuristic algorithmic components are integrated.
+ABC can be also applied for optimization in dynamic and uncertain environments.
