@@ -1,0 +1,42 @@
+Artificial Bee Colony contains three types of colony:
+1. Employee Bees
+2. Onlookers
+3. Scouts
+The main steps of algorithm are:
+1. Initial food sources are produced for employee bees
+2. Repeat
+(a) Each employee bee goes to a food source in her memory and determines a closest
+source, then evaluates its nectar amount and dance in hive.
+(b) Each onlooker watches the dances of employee bee and choose one of their source
+depending on dance, and then goes to that source. After choosing a neighbor around
+that, she evaluates its nectar amount.
+(c) Abandoned food sources are determined and are replaced with new food source discovered
+by scouts.[8]
+(d) The best food source found so far is registered.
+3. UNTIL (requirements are met)
+5.3.1 Mathematical Expression
+Number of employee bees = Number of onlookers = Number of solution in swarm
+Step 1: Artificial Bee Colony generates a randomly distributed initial population of solution
+(SN), where SN denotes the size of employee bee or onlookers.
+Each solution xi is a D-dimensional vector where i= 1,2,3,...SN and D is number of optimisation
+parameters.
+Step 2: Then the initial fitness of population is evaluated( In ABC, the nectar amount of a
+food source correspond to quality(fitness) of associated solution). The population of
+solution is then subjected to repeated cycles such as employee bees, onlookers and scouts.
+Step 3: For each employee bee, a new solution(Vij) is produced by using solution search equation:
+Vij = xij + ij(xij-xkj)
+where k is 1,2,....SN and j is 1,2....D are randomly generated indexes,
+ is a random number between [-1,1] and
+xij is food position or solution.
+Step 4: Calculate the probability Pij for solution Vij by following equation:
+Pi = fit P i SN
+j=1 fitj
+where fiti denotes fitness value of ith solution.
+For each new solution, its fitness is evaluated and then it applies greedy mechanism that is
+fitness value of new one is better than the previous, then employee bee would memorize
+the new position and forgets previous one.
+7
+Step 5: If a position cannot be improved further through a predetermined cycles,the food source
+should be abandoned.
+Step 6: Memorize the best solution that is obtained.
+Step 7: Repeat the cycles until termination condition is satisfied.[9]
